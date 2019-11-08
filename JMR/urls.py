@@ -14,8 +14,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, re_path
+
+from recruitment_task.views import LandingPageView, ShorterUrlView, YourShorterUrlView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', LandingPageView.as_view(), name="landing_page"),
+    re_path(r'shorter_url/([0-9a-z]{5}$)', ShorterUrlView.as_view(), name="your_shorter_url"),
+    re_path(r'([0-9a-z]{5}$)', YourShorterUrlView.as_view(), name="your_shorter_url"),
 ]

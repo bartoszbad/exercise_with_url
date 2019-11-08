@@ -1,3 +1,4 @@
 from django.contrib import admin
+from recruitment_task.models import Url
 
-# Register your models here.
+admin.site.register(Url)
