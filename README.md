@@ -1,43 +1,44 @@
 # exercise_with_url
-shortening urls
+Short app designed for shortening URLs
 
-#Treść zadania
+## Getting started
+    Open your terminal
+    $ sudo easy_install pip # installs Pip package manager
+    $ git clone https://github.com/bartoszbad/exercise_with_url
+    $ cd exercise_with_url # Browse into the repo root directory
+    $ pip install virtualenv # Virtualenv is a tool to create isolated Python environments.
+    $ virtualenv venv #Create virtual enviroment
+    $ source venv/bin/activate # Launch the environment
+    $ pip3 install -r requirements #Install dependiences
+    $ python3 manage.py migrate #Migrate models
+    $ python3 manage.py createsuperuser #Create Django Admin, some functions requires Admin.auth
+    $ python3 manage.py runserver
 
+
+## What it is about:
 Przygotować aplikację skracającą URLe. Aplikacja ma za zadanie:
 
-• pobierać od (anonimowego) użytkownika URL
+• App takes from (anonymouse user) URL link
 
-• generować skrócony URL w formie <twoja domena>/<skrót>
+• App generates shoreten URL `<domain>/<shortcut>` 
 
-• podawać go użytkownikowi
+• App returns link
 
-• w interfejsie admina ma być widoczna lista wszystkich URLi wraz z ich
-wartością
+• After requesting `<domain>/<shortcut>` user is automaticaly redirected to orign URL
 
-• po przejściu do <twoja domena>/<skrót> użytkownik ma być
-przekierowany na pierwotny adres podany do skrócenia.
+• In admin interface you can view URL list
 
-Technologie do wykorzystania:
+## Technology used:
+• Django
 
-•Django
-
-Dodatkowym atutem będzie:
-
-• Opublikowanie swojego kodu w prywatnym repozytorium (github,
-bitbucket) oraz udostępnienie nam go poprzez ten serwis.
-
-• Opublikowanie swojej aplikacji w internecie – na dowolnym darmowym
-hostingu.
-
-W razie nie publikowania kodu na githubie/bitbuckecie/czyminnym prosimy o
-przesłanie go mailem.
-
-#dodatkowe
-
-Aplikacja jest dostępna online pod adresem: 
+## Additional:
+Aplication is avaliable online: 
 http://bartoszbad.pythonanywhere.com/
 
-panel admina:
+Administrator dashboard:
 http://bartoszbad.pythonanywhere.com/admin/
 login: admin
 password: admin
+
+## License
+* Please see LICENSE file
