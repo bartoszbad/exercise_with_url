@@ -1,5 +1,5 @@
 from django.apps import AppConfig
 
 
-class RecruitmentTaskConfig(AppConfig):
+class ShorteningUrlsConfig(AppConfig):
     name = 'shortening_urls'

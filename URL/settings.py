@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'shortening_urls.apps.RecruitmentTaskConfig',
+    'shortening_urls.apps.ShorteningUrlsConfig',
 ]
 
 MIDDLEWARE = [
