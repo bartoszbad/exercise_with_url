@@ -1,4 +1,4 @@
-"""JMR URL Configuration
+"""URL URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/2.2/topics/http/urls/
@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, re_path
 
-from recruitment_task.views import LandingPageView, ShorterUrlView, YourShorterUrlView
+from shortening_urls.views import LandingPageView, ShorterUrlView, YourShorterUrlView
 
 urlpatterns = [
     path('admin/', admin.site.urls),

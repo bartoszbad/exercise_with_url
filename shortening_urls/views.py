@@ -1,8 +1,8 @@
 import short_url
 from django.shortcuts import render, redirect
 from django.views import View
-from recruitment_task.forms import UrlForm
-from recruitment_task.models import Url
+from shortening_urls.forms import UrlForm
+from shortening_urls.models import Url
 
 
 class LandingPageView(View):

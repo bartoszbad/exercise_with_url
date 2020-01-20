@@ -1,6 +1,6 @@
 from django.forms import ModelForm, forms
 
-from recruitment_task.models import Url
+from shortening_urls.models import Url
 
 
 class UrlForm(ModelForm):
