@@ -16,7 +16,6 @@ Short app designed for shortening URLs
 
 
 ## What it is about:
-Przygotować aplikację skracającą URLe. Aplikacja ma za zadanie:
 
 • App takes from (anonymouse user) URL link
 
